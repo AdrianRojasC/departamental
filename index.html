@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Define el tipo de documento -->
+<html lang="es"> <!-- Inicio del documento HTML y define el idioma como español -->
+
+<head> <!-- Inicio de la sección de encabezado del documento -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define la configuración de la vista del documento -->
+    <title>Lista de Tareas</title> <!-- Define el título del documento -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Enlaza el archivo de estilos CSS con el documento HTML -->
+</head> <!-- Fin de la sección de encabezado del documento -->
+
+<body> <!-- Inicio del cuerpo del documento -->
+    <div class="container"> <!-- Inicio del contenedor principal -->
+        <h1>Lista de Tareas</h1> <!-- Título de la página -->
+        <input type="text" id="taskInput" placeholder="Agregar nueva tarea"> <!-- Campo de entrada para agregar una nueva tarea -->
+        <textarea id="taskDescription" placeholder="Descripción de la tarea"></textarea> <!-- Área de texto para agregar la descripción de la tarea -->
+        <input type="datetime-local" id="dueDateTime"> <!-- Campo de entrada para agregar la fecha y hora de vencimiento de la tarea -->
+        <button onclick="addTask()">Agregar</button> <!-- Botón para agregar la tarea -->
+        <button data-filter="all" class="filter-btn">Todas</button> <!-- Botón para filtrar todas las tareas -->
+        <button data-filter="completed" class="filter-btn">Completadas</button> <!-- Botón para filtrar las tareas completadas -->
+
+        
+        <ul id="taskList">
+            <!-- Tareas se añaden dinámicamente aquí -->
+        </ul> <!-- Fin de la lista de tareas -->
+    </div> <!-- Fin del contenedor principal -->
+    <script src="js.js"></script> <!-- Enlaza el archivo de scripts JavaScript con el documento HTML -->
+</body> <!-- Fin del cuerpo del documento -->
+
+</html> <!-- Fin del documento HTML -->
